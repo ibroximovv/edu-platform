@@ -1,0 +1,21 @@
+{
+  "name": "@edu/source",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev": "nx run web:dev",
+    "build": "nx run web:build",
+    "preview": "nx run web:preview",
+    "typecheck": "nx run-many -t typecheck",
+    "graph": "nx graph"
+  },
+  "devDependencies": {
+    "nx": "^23.2.1",
+    "typescript": "~5.9.3"
+  }
+}
